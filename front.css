@@ -1,0 +1,647 @@
+/*Color Pallet*/
+/* As hex codes */
+.color-primary-0 {  color: #162934  }
+
+/* Main Primary color */
+.color-primary-1 {  color: #000203  }
+.color-primary-2 {  color: #081821  }
+.color-primary-3 {  color: #33444D  }
+.color-primary-4 {  color: #62727C  }
+.color-secondary-1-0 {  color: #1B1D39  }
+
+/* Main Secondary color (1) */
+.color-secondary-1-1 {  color: #000003  }
+.color-secondary-1-2 {  color: #0B0D24  }
+.color-secondary-1-3 {  color: #3A3C54  }
+.color-secondary-1-4 {  color: #6D6F87  }
+.color-secondary-2-0 {  color: #163A28  }
+
+/* Main Secondary color (2) */
+.color-secondary-2-1 {  color: #000302  }
+.color-secondary-2-2 {  color: #072416  }
+.color-secondary-2-3 {  color: #375546  }
+.color-secondary-2-4 {  color: #6A8879  }
+/* As RGBa codes */
+
+.rgba-primary-0 {
+  color: rgba( 22, 41, 52, 1)
+}
+
+/* Main Primary color */
+
+.rgba-primary-1 {
+  color: rgba( 0, 2, 3, 1)
+}
+
+.rgba-primary-2 {
+  color: rgba( 8, 24, 33, 1)
+}
+
+.rgba-primary-3 {
+  color: rgba( 51, 68, 77, 1)
+}
+
+.rgba-primary-4 {
+  color: rgba( 98, 114, 124, 1)
+}
+
+.rgba-secondary-1-0 {
+  color: rgba( 27, 29, 57, 1)
+}
+
+/* Main Secondary color (1) */
+
+.rgba-secondary-1-1 {
+  color: rgba( 0, 0, 3, 1)
+}
+
+.rgba-secondary-1-2 {
+  color: rgba( 11, 13, 36, 1)
+}
+
+.rgba-secondary-1-3 {
+  color: rgba( 58, 60, 84, 1)
+}
+
+.rgba-secondary-1-4 {
+  color: rgba(109, 111, 135, 1)
+}
+
+.rgba-secondary-2-0 {
+  color: rgba( 22, 58, 40, 1)
+}
+
+/* Main Secondary color (2) */
+
+.rgba-secondary-2-1 {
+  color: rgba( 0, 3, 2, 1)
+}
+
+.rgba-secondary-2-2 {
+  color: rgba( 7, 36, 22, 1)
+}
+
+.rgba-secondary-2-3 {
+  color: rgba( 55, 85, 70, 1)
+}
+
+.rgba-secondary-2-4 {
+  color: rgba(106, 136, 121, 1)
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/OpenSans-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Cabin Sketch Bold";
+  src: url("../fonts/CabinSketch-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Cabin Sketch";
+  src: url("../fonts/CabinSketch-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Qwigley Regular";
+  src: url("../fonts/Qwigley-Regular.ttf");
+  src: url("../fonts/Qwigley-Regular.woff"), format('woff');
+  src: url("https://fonts.googleapis.com/css?family=Qwigley");
+}
+
+body {
+  margin: 0;
+  /*background: url(images/build2.png); off
+  background-size: cover; off*/
+  font-family: Roboto, "Open Sans", Verdana;
+}
+
+.central {
+  /*controla largura do conteúdo*/
+  width: 80%;
+  margin: 0 auto;
+}
+
+main a {
+  text-decoration: none;
+  color: #62727C;
+}
+
+main p a:hover {
+  font-weight: 600;
+  border: 1px;
+  border-bottom-style: solid;
+  font-weight: bold;
+}
+
+/*Superior Menu Navigation*/
+
+.bar {
+  background: #162934;
+  color: #FFF;
+  height: 70px;
+  padding: 40px 0 0;
+  font-family: Roboto, "Open Sans", Verdana;
+  font-size: 16px;
+  /*box-shadow: 1px 1px 10px 1px red;*/
+}
+
+nav {
+  float: right;
+  height: 70px;
+  font-family: Roboto;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  height: 100%;
+}
+
+nav ul li {
+  display: inline;
+  padding: 0 0 0 100px;
+}
+
+.project-icon:hover .fa-vial {
+  display: none;
+}
+
+.project-icon .fa-vial-full {
+  display: none;
+}
+
+.project-icon:hover .fa-vial-full {
+  display: inline-block;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #FFF;
+}
+
+nav ul li a:hover {
+  text-decoration: none;
+  color: rgba(106, 136, 121, 1);
+}
+
+#signature {
+  color: #FFF;
+  font-family: "Qwigley Regular", "Calligraffitti", "Trebuchet MS";
+  font-size: 40px;
+  width: auto;
+  height: inherit;
+  margin: 0;
+  padding: 0;
+  float: left;
+}
+
+#signature .fa-code {
+  margin-left: 5px;
+  transform: rotate(-15deg);
+  font-size: 22px;
+}
+
+.subBar .central {
+  overflow: hidden;
+  width: 100%;
+  /*Remove for default 70%*/
+}
+
+.subBar {
+  display: block;
+  width: 100%;
+  height: 750px;
+  /*avoid collapsing*/
+  margin: 0 0 100px;
+}
+
+#archtect {
+  background: url("images/archtect.jpg") no-repeat 0 0;
+  background-size: 100%;
+  position: relative;
+  top: -400px;
+  width: 100%;
+  height: 1100px;
+  /*Chop*/
+  overflow: hidden;
+}
+
+#svgGroup path {
+  fill: url(#builtImg);
+  /*image slices of svg path*/
+}
+
+.tile-left,
+.tile-right {
+  opacity: 0;
+  transition: 0ms 30s;
+  /*hide again after Xsecs*/
+}
+
+.tile-left:hover,
+.tile-right:hover {
+  opacity: 1;
+  transition-delay: 0s;
+}
+
+.text {
+  pointer-events: none;
+  /*Transpass div on hover*/
+  position: absolute;
+  margin-top: 36%;
+  width: 100%;
+  color: #3A3C54;
+}
+
+.text p {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.6);
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 2vw;
+  font-family: "Cabin Sketch Bold", "Cabin Sketch", "impact", "Corbel";
+}
+
+.dev {
+  transform: rotate3d(2, 1, 1, 80deg) skew(-5deg);
+  top: 60px;
+  left: 35.5%;
+}
+
+.front {
+  transform: rotate3d(2, -1, -1, 80deg) skew(-5deg);
+  top: 80px;
+  left: 50%;
+}
+
+/*Introduction-brief*/
+
+.intro {
+  display: none;
+  /*default flex*/
+}
+
+.picture {
+  display: none;
+  margin: 1% 0px 0px 5%;
+  max-width: 10%;
+  max-height: 10%;
+}
+
+.picture img {
+  max-width: 90%;
+  float: right;
+}
+
+/*Main content*/
+
+section {
+  margin: 0 0 20px;
+  padding: 20px 0px 10px;
+  font-family: Roboto, "Open Sans", Verdana;
+  font-size: 25px;
+}
+
+section.index:nth-child(odd) {
+  border-top: 1px solid #fcfcfc;
+  border-bottom: 1px solid #fcfcfc;
+}
+
+section h1 {
+  font-size: 25px;
+  text-align: center;
+  padding: 2px 5px;
+}
+
+h1 span {
+  box-shadow: 1px 2px 1px 2px #adadad;
+  padding: 3px;
+}
+
+section h2 {
+  font-size: 20px;
+}
+
+/*SubPage - Projects*/
+
+.projects {
+  margin-top: 30px;
+}
+
+/****************
+**Canvas-Skills list**
+*****************/
+
+ul#list {
+  border-style: none;
+  padding: 0;
+  margin: 0px 0px;
+  width: 50%;
+}
+
+#list h2 {
+  margin: 0px 0px;
+}
+
+.skill {
+  position: relative;
+  /*relative for h3.pct_val*/
+}
+
+h3.pct_val {
+  position: absolute;
+  top: -50%;
+  vertical-align: super;
+  font-weight: bolder;
+  font-size: 25px;
+  text-align: center;
+  color: rgb(100, 100, 100);/*Fallback*/
+  color: rgba(0, 0, 0, 0.5);
+}
+
+canvas {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+#list li {
+  list-style-type: none;
+  height: 40px;
+  margin: 20px 0px;
+}
+
+#list h2 {
+  font-size: 25px;
+}
+
+
+#list h2.javascript {
+  /*Text*/
+  color: rgba(245, 208, 0, 1);
+}
+#list li.javascript {
+  /*Bar*/
+  border-color: rgba(245, 208, 0, 0.6);
+  border-width: 3px;
+  border-left-style: solid;
+  border-right-style: solid;
+}
+
+#list h2.jquery {
+  color: rgba(8, 104, 171, 0.986);
+}
+#list li.jquery {
+  border-color: rgba(8, 104, 171, 0.5);
+  border-width: 3px;
+  border-left-style: solid;
+  border-right-style: solid;
+}
+
+#list h2.html5 {
+  color: rgba(255, 94, 0, 1);
+}
+#list li.html5 {
+  border-color: rgba(255, 94, 0, 0.5);
+  border-width: 3px;
+  border-left-style: solid;
+  border-right-style: solid;
+}
+
+#list h2.css3 {
+  color: rgba(0, 124, 240, 0.5);
+}
+#list li.css3 {
+  border-color: rgba(0, 124, 240, 0.5);
+  border-width: 3px;
+  border-left-style: solid;
+  border-right-style: solid;
+}
+
+#list h2.php {
+  color: rgba(126, 135, 255, 1);
+}
+#list li.php {
+  border-color: rgba(126, 135, 255, 0.5);
+  border-width: 3px;
+  border-left-style: solid;
+  border-right-style: solid;
+}
+
+#list h2.mysql {
+  color: rgba(0, 117, 143, 1);
+} #list span.sql {
+    border: 0;
+    color: rgba(242, 147, 17, 1);
+  }
+#list li.mysql {
+  border-width: 3px;
+  border-left: solid rgba(242, 147, 17, 0.5);
+  border-right: solid rgba(0, 117, 143, 0.5);
+}
+
+#list h2.photoshop {
+  color: rgba(0, 157, 200, 1);
+}
+#list li.photoshop {
+  border-color: rgba(0, 80, 102, 0.5);
+  border-width: 3px;
+  border-left-style: solid;
+  border-right-style: solid;
+}
+
+/*******************
+**Balloon - Slider**
+********************/
+
+#chat {
+  position: absolute;
+  left: 91%;
+  top: 200px;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  font-size: 1.15rem;
+  font-weight: bold;
+  background: radial-gradient(rgba(0, 110, 130, 0.2), rgba(0, 110, 130, 0.2) 60%, rgba(0, 110, 130, 0.3), rgba(0, 110, 130, 0.3), rgba(0, 110, 130, 0.3));
+  box-shadow: 1px 2px 6px rgba(0, 50, 70, 0.4);
+  color: rgba(255, 255, 255, 0.9);
+  transition: 2s;
+  /*ball following speed*/
+}
+
+#chat::before {
+  content: "";
+  position: absolute;
+  left: 0%;
+  top: 0px;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  background: radial-gradient( rgba(0, 110, 130, 0.0), rgba(0, 110, 130, 0.0), rgba(0, 110, 130, 0.0)70%, rgba(0, 110, 130, 0.2), rgba(0, 110, 130, 0.3));
+  box-shadow: 1px 2px 6px rgba(0, 50, 70, 0.4);
+}
+
+#chat b,
+#chat a {
+  text-align: center;
+  display: block;
+  margin: 5px 10px;
+  text-decoration: none;
+  color: inherit;
+  text-align: center;
+}
+
+.subChat {
+  /*3 sub ellipses*/
+  position: absolute;
+  opacity: 0;
+  margin: 11px;
+  border-radius: 50%;
+  font-family: "calibri light", "sans serif";
+  font-size: 12px;
+  width: 40px;
+  height: 40px;
+  color: rgba(255, 255, 255, 1);
+  transition: 0.3s;
+}
+
+.subChat p {
+  margin: 6px;
+  text-align: center;
+  display: block;
+}
+
+#wapp {
+  top: 10%;
+  left: 10%;
+  background: rgba(52, 175, 35, 0.5);
+}
+
+#wapp:hover {
+  position: absolute;
+  top: -90%;
+}
+
+#liveChat {
+  cursor: pointer;
+  /*Keep hand style*/
+  top: 10%;
+  left: 10%;
+  background: rgba(0, 200, 255, 0.5);
+}
+
+#email {
+  top: 10%;
+  left: 10%;
+  background: rgba(255, 150, 0, 0.5);
+}
+
+/***********************
+**SubPage About-Resume**
+************************/
+
+.about {
+  padding: 20px;
+}
+
+.resume {
+  border: 2px solid #AAA;
+  padding: 20px auto;
+  height: 100%;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.resume ul {
+  list-style-type: none;
+  margin: 20px 0px;
+}
+
+.resume li {
+  background: none;
+  margin: 0px 0px;
+}
+
+/*******************
+**SubPage Projects**
+********************/
+
+.projects article {
+  display: flex;
+  margin: 40px;
+  border: 2px solid #EEE;
+  max-width: 80%;
+  font-size: 16px;
+}
+
+.projects article div {
+  width: 50%;
+  padding: 10px;
+}
+
+.projects article div:nth-child(even) {
+  margin: 70px 30px;
+}
+
+.projects article img {
+  max-width: 90%;
+  height: auto;
+  margin: 20px;
+}
+
+.projects article p {
+  margin: 20px;
+}
+
+.bikespeedlab p {
+  margin: 0px 20px;
+}
+
+/*****************
+**SubPage Social-networks**
+******************/
+
+.networks {
+  min-height: 150vh;
+}
+
+.networks p {
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+.networks div {
+  width: 70vh;
+  margin: 0 auto;
+  border: 1px solid #FFF;
+  box-shadow: 1px 1px 15px -6px rgba(0, 0, 0, 0.5);
+  font-variant: small-caps;
+}
+
+/*********
+**Footer**
+**********/
+
+.footer {
+  background: rgba(0, 0, 0, 1);
+  height: 150px;
+  padding: 20px 0;
+}
+
+.footer a,
+.footer p {
+  font-size: 16px;
+  color: rgba(200, 200, 200, 0.8);
+  text-decoration: none;
+}

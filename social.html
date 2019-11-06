@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>	<title>Rodrigo Sebastiao</title>
+<link rel="stylesheet" type="text/css" href="front.css">
+<meta charset="utf-8">
+<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon"/>
+</head>
+<script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+ crossorigin="anonymous">
+</script>
+<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+<script>
+	$(document).ready(function () {
+		$("header").load("index.html header");
+		$("footer").load("index.html footer");
+	});
+</script>
+</head>
+<body>
+	
+	<header class="bar">
+		/*Copy from index.html*/
+	</header>
+
+	<main id="main">
+		<div class="central">
+			<section class="social">
+				<article class="networks">
+					<h1>Social e contatos:</h1>
+
+					<div>
+					<p><a href= "http://www.linkedin.com/in/rodrigo-sebastiao" target="blank">LinkedIn: www.linkedin.com/in/rodrigo-sebastiao</a>
+					</p>
+
+					<p>
+						<a href= "tel:1198516-7571">Tel (11) 9.8516-7571 </a>
+					</p>
+					<p>
+						<a style="color:#0B0;" href= "tel:1198516-7571" target="blank">[Whatsapp: 11 9.8516-7571]</a>
+					</p>
+
+					<p>
+						<a href="#" id="liveChat2">Online Chat!</a>
+					</p>
+					</div>
+				</article>
+			</section>
+		</div>
+	</main>
+
+	<!--Chat Slider-->
+	<div id="chat" class="chatSlide">
+		<b>Chat Me Now!</b>
+		<audio src="media/whistle.mp3"></audio>
+	
+		<a href="https://api.whatsapp.com/send?phone=5511985167571&text=Rodrigo%20Sebastiao" target="blank">
+			<div id="wapp" class="subChat">
+				<p>Whats app</p>
+			</div>
+		</a>
+		<div id="liveChat" class="subChat">
+			<p>Live Chat</p>
+		</div>
+		<a href="mailto:rodrigodanielss@gmail.com" target="blank">
+			<div id="email" class="subChat">
+				<p>E-Mail</p>
+			</div>
+		</a>
+	</div>
+
+	<footer class="footer">
+		/*Copy from index.html*/
+	</footer>
+
+
+<script>//Google Analytics
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-43685815-2', 'auto');
+	ga('send', 'pageview');
+</script>
+
+<script>//Pure Chat
+	var liveChat = document.getElementById("liveChat").onclick= trigLiveChat;
+	var liveChat2 =  document.getElementById("liveChat2") ? document.getElementById("liveChat2").onclick= trigLiveChat : null;
+
+	function trigLiveChat(){
+	purechatApi = { l: [], t: [], on: function () {
+		this.l.push(arguments); } };
+		(function () {
+		var done = false; var script = document.createElement('script');
+		script.async = true; script.type = 'text/javascript';
+		script.src = 'https://app.purechat.com/VisitorWidget/WidgetScript';
+		document.getElementsByTagName('HEAD').item(0).appendChild(script);
+		script.onreadystatechange = script.onload = function (e) {
+			if (!done && (!this.readyState || this.readyState == 'loaded' || this.readyState == 'complete')) {
+			var w = new PCWidget({c: '07b2dbc4-454c-440c-a203-865387dcfbe1', f: true }); done = true; } }; })();
+	console.log("PureChat acessado!");
+	}
+</script>
+
+<script src="actions.js">//Main Script</script>
+</body>
+</html>
